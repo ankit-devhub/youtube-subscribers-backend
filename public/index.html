@@ -184,9 +184,46 @@
                 </code></pre>
             </div>
         </div>
-    </div>
+        <div class="endpoint">
+            <h2 onclick="toggleEndpointContent(3)">GET /subscribers/name</h2>
+            <div class="endpoint-content" id="endpoint-content-3">
+                <p>The API endpoint URL for this service is:</p>
+                <pre><code>/subscribers/name</code></pre>
 
+                <h3>Request</h3>
+                <p>To make a request to the API, send a <code>GET</code> request to the endpoint.</p>
+
+                <h3>Response</h3>
+                <p>The API will respond with an array of JSON objects containing the following fields:</p>
+                <ul>
+                    <li><code>name</code>: Name of Subscriber.</li>
+                    <li><code>subscribedChannel</code>: Name of channel.</li>
+                </ul>
+
+                <h3>Example Request</h3>
+                <pre><code>
+                GET /subscribers/name HTTP/1.1
+                Content-Type: application/json
+                </code></pre>
+
+                <h3>Example Response</h3>
+                <pre><code>
+                HTTP/1.1 200 OK
+                Content-Type: application/json
+                
+                [
+                    {
+                        "name":"Jeread Krus",
+                        "subscribedChannel":"CNET"
+                    }
+                    ...
+                ]
+                </code></pre>
+            </div>
+        </div>
+    </div>
     <script>
+        toggleEndpointContent(1);
         function toggleEndpointContent(endpointId) {
             var content = document.getElementById(`endpoint-content-${endpointId}`);
             content.classList.toggle('show');
