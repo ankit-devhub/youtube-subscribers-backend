@@ -1,7 +1,11 @@
 
 const express = require('express');
 const app = express()
+const path = require("path")
 const subscriberModel = require('./models/subscribers');
+const staticPath = path.join(__dirname,"../public")
+
+app.use("/docs",express.static(staticPath))
 
 app.get("/", (req,res)=>{
     res.json("Hello, This project is made by Ankit");
