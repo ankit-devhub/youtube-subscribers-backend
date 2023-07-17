@@ -49,7 +49,7 @@ app.get("/subscribers/name", async (req, res)=>{
 app.get("/subscribers/:id", async (req, res) => {
   try{
     let id =req.params.id;
-    let subscribers= await subscriberModel.findById(id);
+    let subscribers= await subscriberModel.findById(id).select("-__v");
     res.status(200).json(subscribers);
   }catch(err){
     res.status(400).json({message: "Invalid Id"});
