@@ -40,7 +40,7 @@ Link
 - To run this project locally, use the following command in your CLI:
 
 ```bash
-git clone https://github.com/satyamkumarsk/youtube-subscriber.git
+git clone https://github.com/ankit-devhub/youtube-subscribers-backend.git
 ```
 - Open your favorite code editor and run locally!
 ```bash
