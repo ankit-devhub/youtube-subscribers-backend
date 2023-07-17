@@ -14,9 +14,14 @@ Youtube subscribers backend Api to get the subscribers using specific routes end
 </details>
 
 
-## **Demo**
+## **MongoDB Schema Structure**
 
-Link
+Field               Type
+_id                 ObjectID
+name                String
+subscribedChannel   String
+subscribedDate      Date
+__v                 Int32
 
 ## **Features**
 
