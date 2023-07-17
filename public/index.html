@@ -188,7 +188,7 @@
             <h2 onclick="toggleEndpointContent(3)">GET /subscribers/name</h2>
             <div class="endpoint-content" id="endpoint-content-3">
                 <p>The API endpoint URL for this service is:</p>
-                <pre><code>/subscribers/name</code></pre>
+                <pre><code>/subscribers/{id}</code></pre>
 
                 <h3>Request</h3>
                 <p>To make a request to the API, send a <code>GET</code> request to the endpoint.</p>
@@ -213,10 +213,11 @@
                 
                 [
                     {
-                        "name":"Jeread Krus",
-                        "subscribedChannel":"CNET"
+                       "_id":"{id}",
+                       "name":"Name Crosspond to Document",
+                       "subscribedChannel":"Channel Crosspond to Document",
+                       "subscribedDate":"Date Crosspond to Document"
                     }
-                    ...
                 ]
                 </code></pre>
             </div>
